@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20D0FA312081C8880094AF44 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20D0FA302081C8880094AF44 /* ProfileViewController.swift */; };
 		20EBA30420817DE8000B6349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBA30320817DE8000B6349 /* AppDelegate.swift */; };
 		20EBA30920817DE8000B6349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBA30720817DE8000B6349 /* Main.storyboard */; };
 		20EBA30B20817DE8000B6349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EBA30A20817DE8000B6349 /* Assets.xcassets */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		20D0FA302081C8880094AF44 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		20EBA30020817DE7000B6349 /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EBA30320817DE8000B6349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20EBA30820817DE8000B6349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 				20EBA30C20817DE8000B6349 /* LaunchScreen.storyboard */,
 				20EBA30F20817DE8000B6349 /* Info.plist */,
 				20EBA33120817EA7000B6349 /* CardsViewController.swift */,
+				20D0FA302081C8880094AF44 /* ProfileViewController.swift */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20D0FA312081C8880094AF44 /* ProfileViewController.swift in Sources */,
 				20EBA30420817DE8000B6349 /* AppDelegate.swift in Sources */,
 				20EBA33220817EA7000B6349 /* CardsViewController.swift in Sources */,
 			);
