@@ -10,38 +10,34 @@ import UIKit
 
 class CardsViewController: UIViewController {
   
+  var fadeTransition: FadeTransition!
+  
+  @IBOutlet weak var photoImageView: UIImageView!
+  
   var cardInitialCenter: CGPoint!
   var cardInitialRotation: CGAffineTransform!
   var rotationSpeed = 1.0
-
+  
   @IBAction func didPanImage(_ sender: UIPanGestureRecognizer) {
     let imageView = sender.view as! UIImageView
     let translation = sender.translation(in: view)
     let velocity = sender.velocity(in: view)
     let location = sender.location(in: view)
-    let imageY = view.frame.origin.y
-    let imageHeight = view.frame.height
     let imageHalf = 210
-    
-    //print("translation \(translation)")
-    //print("velocity \(velocity)")
-    print("location \(location)")
     
     if sender.state == .began {
       cardInitialCenter = imageView.center
       cardInitialRotation = imageView.transform
-      print("began")
       
       if(location.y >= CGFloat(imageHalf)) {
-        rotationSpeed = -1
+        rotationSpeed = -0.6
       }
       else {
-        rotationSpeed = 1
+        rotationSpeed = 0.6
       }
       
     } else if sender.state == .changed {
       imageView.center = CGPoint(x: cardInitialCenter.x + translation.x, y: cardInitialCenter.y)
-      print("changed")
       
       // Rotation
       if(velocity.x > 0) {
@@ -70,15 +66,22 @@ class CardsViewController: UIViewController {
     // Dispose of any resources that can be recreated.
   }
   
-  
-  /*
-   // MARK: - Navigation
-   
-   // In a storyboard-based application, you will often want to do a little preparation before navigation
-   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-   // Get the new view controller using segue.destinationViewController.
-   // Pass the selected object to the new view controller.
-   }
-   */
-  
+  override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    let profileViewController = segue.destination as! ProfileViewController
+    
+    // Pass on the data to the Detail ViewController
+    profileViewController.photo = photoImageView.image
+    
+    // Set the modal presentation style of your destinationViewController to be custom.
+    profileViewController.modalPresentationStyle = UIModalPresentationStyle.custom
+    
+    // Create a new instance of your fadeTransition.
+    fadeTransition = FadeTransition()
+    
+    // Tell the destinationViewController's  transitioning delegate to look in fadeTransition for transition instructions.
+    profileViewController.transitioningDelegate = fadeTransition
+    
+    // Adjust the transition duration. (seconds)
+    fadeTransition.duration = 1.0
+  }
 }
