@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		20EBA30420817DE8000B6349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBA30320817DE8000B6349 /* AppDelegate.swift */; };
-		20EBA30620817DE8000B6349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBA30520817DE8000B6349 /* ViewController.swift */; };
 		20EBA30920817DE8000B6349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBA30720817DE8000B6349 /* Main.storyboard */; };
 		20EBA30B20817DE8000B6349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20EBA30A20817DE8000B6349 /* Assets.xcassets */; };
 		20EBA30E20817DE8000B6349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20EBA30C20817DE8000B6349 /* LaunchScreen.storyboard */; };
 		20EBA31920817DE8000B6349 /* TinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBA31820817DE8000B6349 /* TinderTests.swift */; };
 		20EBA32420817DE8000B6349 /* TinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBA32320817DE8000B6349 /* TinderUITests.swift */; };
+		20EBA33220817EA7000B6349 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20EBA33120817EA7000B6349 /* CardsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		20EBA30020817DE7000B6349 /* Tinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EBA30320817DE8000B6349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		20EBA30520817DE8000B6349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		20EBA30820817DE8000B6349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		20EBA30A20817DE8000B6349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		20EBA30D20817DE8000B6349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		20EBA31F20817DE8000B6349 /* TinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		20EBA32320817DE8000B6349 /* TinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderUITests.swift; sourceTree = "<group>"; };
 		20EBA32520817DE8000B6349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		20EBA33120817EA7000B6349 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				20EBA30320817DE8000B6349 /* AppDelegate.swift */,
-				20EBA30520817DE8000B6349 /* ViewController.swift */,
 				20EBA30720817DE8000B6349 /* Main.storyboard */,
 				20EBA30A20817DE8000B6349 /* Assets.xcassets */,
 				20EBA30C20817DE8000B6349 /* LaunchScreen.storyboard */,
 				20EBA30F20817DE8000B6349 /* Info.plist */,
+				20EBA33120817EA7000B6349 /* CardsViewController.swift */,
 			);
 			path = Tinder;
 			sourceTree = "<group>";
@@ -259,8 +259,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20EBA30620817DE8000B6349 /* ViewController.swift in Sources */,
 				20EBA30420817DE8000B6349 /* AppDelegate.swift in Sources */,
+				20EBA33220817EA7000B6349 /* CardsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
